@@ -10,7 +10,6 @@ Content-Type: application/json
 }
 
 
-
 #####
 # LOGIN ROUTES
 POST http://localhost:5004/api/v1/login
@@ -34,3 +33,17 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxN
     "password": "123456",
     "role": 2
 }
+
+###
+# GET USER BY ID, ADMIN ONLY
+GET http://localhost:5004/api/v1/user/4
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNjQyNjY5NTMwfQ.uE6ZHf8Af_-s4xiCUIZ2H1Fd-hRwvDNDE_hQgHMX0Rw
+
+###
+# DELETE USER, ADMIN ONLY
+DELETE http://localhost:5004/api/v1/user/4
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjQyNjcwNTkwfQ.j8RKoXeT0F_TnzrH2uylt_02L5dwz_Ys3D45LHvf2z0
+
+
