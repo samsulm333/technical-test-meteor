@@ -1,0 +1,36 @@
+
+# Register Route
+POST http://localhost:5004/api/v1/register
+Content-Type: application/json
+
+{
+    "email": "user3@gmail.com",
+    "password": "123456",
+    "name": "user 3"
+}
+
+
+
+#####
+# LOGIN ROUTES
+POST http://localhost:5004/api/v1/login
+Content-Type: application/json
+
+{
+    "email": "admin333@gmail.com",
+    "password": "123456"
+}
+
+
+###
+# CREATE USER BY ADMIN
+POST http://localhost:5004/api/v1/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjQyNjcwNTkwfQ.j8RKoXeT0F_TnzrH2uylt_02L5dwz_Ys3D45LHvf2z0
+
+{
+    "name": "yusuf",
+    "email": "yusuf@mail.com",
+    "password": "123456",
+    "role": 2
+}
